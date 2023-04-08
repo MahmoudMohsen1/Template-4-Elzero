@@ -36,7 +36,34 @@ a {
     box-shadow: 0 0 10px #ddd;
 }
 .sidebar > h3 {
+    position: relative;
+    line-height: normal;
     margin-bottom: 50px;
+    letter-spacing: -.5px;
+}
+
+.sidebar > h3::before,
+.sidebar > h3::after
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+.sidebar > h3::before{
+    width: calc(100% - 100px);
+    height: 2px;
+    bottom: -22px;
+}
+
+.sidebar > h3::after {
+    bottom: -31px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 4px solid white;
 }
 
 .sidebar a {
@@ -57,4 +84,34 @@ a {
 .sidebar a i {
     margin-right: 10px;
 }
+@media (max-width: 767px){
+    .sidebar {
+        padding: 10px;
+    }
+    .sidebar > h3 {
+        margin-bottom: 15px;
+        margin-top: 0;
+        font-size: 13px; 
+        letter-spacing: 0;
+    }
+    .sidebar > h3::before,
+    .sidebar > h3::after {
+        display: none;
+    }
+    .sidebar span {
+        display: none;
+    }
+
+    .sidebar a {
+        width: fit-content;
+    }
+    .sidebar a i {
+        margin-right: 0;
+    }
+}
 /* End sidebar */
+/* Start header */
+.header img {
+    width: 32px;
+}
+/* End header */
