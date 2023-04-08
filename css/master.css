@@ -1,7 +1,6 @@
 /* Start Varivables */
 :root {
     --main-color: ;
-    font-size: 16px;
 }
 /* End Varivables */
 /* Start global Rules */
@@ -31,3 +30,31 @@ a {
 /* End global Rules */
 /* Start Components */
 /* End Components */
+/* Start sidebar */
+.sidebar {
+    min-height: 100vh;
+    box-shadow: 0 0 10px #ddd;
+}
+.sidebar > h3 {
+    margin-bottom: 50px;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    transition: .2s;
+    margin-bottom: 5px;
+    width: 174px;
+    font-size: 14px;
+}
+
+.sidebar a:hover,
+.sidebar .active
+{
+    background-color: #f6f6f6;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+/* End sidebar */
