@@ -3,12 +3,28 @@
     display: flex;
 }
 .align-center {
+    display: flex;
     align-items: center;
 }
 .between-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.d-grid {
+    display: grid;
+}
+.gap-20 {
+    gap: 20px;
+}
+.d-block {
+    display: block;
+}
+.over-h {
+    overflow: hidden;
+}
+@media (min-width: 752px){
+    
 }
 /* End box */
 /* Start padding + margin */
@@ -33,6 +49,12 @@
 .m-50px {
     margin: 50px;
 }
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
 /* End padding + margin */
 /* Start Font */
 .fs-14 {
@@ -47,6 +69,9 @@
 .txt-center {
     text-align: center;
 }
+.f-normal {
+    line-height: normal;
+}
 /* End Font */
 /* Start color */
 .bg-white {
@@ -55,8 +80,20 @@
 .bg-white-smoke {
     background-color: #f1f5f9;
 }
+.bg-eee {
+    background-color: #eeeeee;
+}
+.bg-blue {
+    background-color: #0075ff;
+}
 .c-black {
     color: black;
+}
+.c-grey {
+    color: #888888;
+}
+.c-white {
+    color: white;
 }
 /* End color */
 /* Start position */
@@ -71,9 +108,28 @@
 .rad-6 {
     border-radius: 6px;
 }
+.rad-10 {
+    border-radius: 10px;
+}
+.rad-50-percentage {
+    border-radius: 50%;
+}
 /* ENd border */
 /* Start width and height */
 .w-full {
     width: 100%;
 }
+.w-fit {
+    width: fit-content;
+}
 /* End width and height */
+/* Start button */
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 0 15px 15px auto;
+    font-weight: 500;
+}
+
+/* End button */
