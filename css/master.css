@@ -207,15 +207,48 @@ a {
     font-size: 22.5px;
 }
 .welcome .body {
-    flex-direction: column;
     margin-top: 56px;
     margin-bottom: 20px;
     border-style: solid;
     border-width: 1px;
     border-color: #eee transparent;
 }
+.welcome .body > div {
+    font-weight: 500;
+}
 .welcome .body > div:not(:last-child) {
     margin-bottom: 20px;
+}
+@media (max-width: 767px){
+    .mobile-block {
+        flex-direction: column;
+    }
+}
+@media (min-width: 767px){
+    .welcome .intro {
+        padding-bottom: 20px;
+    }
+    .welcome .intro > div {
+        height: 97px;
+    }
+    .welcome .intro p {
+        text-align: start;
+    }
+    .welcome .intro .hide-mobile {
+        display: block;
+        width: 200px;
+        margin-bottom: -10px;
+    }
+    .welcome .intro .avatar {
+        left: 20px;
+        transform: translate(0, 50%);
+    }
+    .welcome .body > div{
+        flex-basis: calc(100% / 3);
+    }
+    .welcome .body > div:not(:last-child) {
+        margin-bottom: 0;
+    }
 }
 /* Start quick draft */
 

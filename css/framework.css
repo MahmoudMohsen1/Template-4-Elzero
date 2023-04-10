@@ -23,9 +23,6 @@
 .over-h {
     overflow: hidden;
 }
-@media (min-width: 752px){
-    
-}
 /* End box */
 /* Start padding + margin */
 .p-5 {
@@ -54,6 +51,9 @@
 }
 .mt-10 {
     margin-top: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
 }
 /* End padding + margin */
 /* Start Font */
