@@ -36,6 +36,9 @@ a {
 }
 /* End global Rules */
 /* Start Components */
+.btn-shape:hover {
+    background-color: var(--blue-alt-color);
+}
 /* End Components */
 /* Start sidebar */
 .sidebar {
@@ -182,9 +185,14 @@ a {
 }
 /* Start Wrapper */
 .wrapper {
-    margin: 0 10px 20px;
-    grid-template-columns: minmax(200px, 1fr);
-    margin-top: 40px;
+    margin: 40px 10px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (min-width: 767px){
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 /* Start Welcome */
 
@@ -202,9 +210,6 @@ a {
     left: 50%;
     transform: translate(-50%, 50%);
     border: 4px solid white;
-}
-.welcome .intro > div h3{
-    font-size: 22.5px;
 }
 .welcome .body {
     margin-top: 56px;
@@ -251,7 +256,13 @@ a {
     }
 }
 /* Start quick draft */
-
+.quick-draft form textarea {
+    height: 180px;
+}
+.quick-draft form input[type="submit"]{
+    margin-right: 0;
+    margin-bottom: 0;
+}
 /* End quick draft */
 
 /* End Wrapper */
