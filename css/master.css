@@ -264,5 +264,38 @@ a {
     margin-bottom: 0;
 }
 /* End quick draft */
-
+/* Start Yearly targets */
+/* End Yearly targets */
+.targets .target .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+.targets .target:first-of-type .icon {
+    background-color: rgb(13 105 213 / 20%);
+}
+.targets .target:nth-of-type(2) .icon {
+    background-color: rgb(245 158 11 / 20%);
+}
+.targets .target:last-of-type .icon {
+    background-color: rgb(34 197 94 / 20%);
+}
+.targets .target .details {
+    width: calc(100% - 15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.targets .target:first-of-type .details .progress {
+    background-color: rgb(13 105 213 / 20%);
+}
+.targets .target:nth-of-type(2) .details .progress {
+    background-color: rgb(245 158 11 / 20%);
+}
+.targets .target:last-of-type .details .progress {
+    background-color: rgb(34 197 94 / 20%);
+}
+.targets .target .details > div span {
+    height: 4px;
+}
 /* End Wrapper */

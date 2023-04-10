@@ -6,6 +6,11 @@
     display: flex;
     align-items: center;
 }
+.justify-align-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .between-flex {
     display: flex;
     align-items: center;
@@ -117,6 +122,21 @@
 .bg-blue {
     background-color: #0075ff;
 }
+.bg-orange {
+    background-color: #f59e0b;
+}
+.bg-green {
+    background-color: #22c55e;
+}
+.c-blue {
+    color: #0075ff;
+}
+.c-orange {
+    color: #f59e0b;
+} 
+.c-green {
+    color: #22c55e;
+} 
 .c-black {
     color: black;
 }
