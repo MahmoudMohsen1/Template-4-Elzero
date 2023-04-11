@@ -67,6 +67,12 @@
 .mt-10 {
     margin-top: 10px;
 }
+.mb-0 {
+    margin-bottom: 0;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -75,6 +81,9 @@
 }
 .mb-20 {
     margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
 }
 /* End padding + margin */
 /* Start Font */
@@ -89,6 +98,9 @@
 }
 .fs-18 {
     font-size: 18px;
+}
+.fs-26 {
+    font-size: 26px;
 }
 .txt-center {
     text-align: center;
@@ -137,6 +149,9 @@
 .c-green {
     color: #22c55e;
 } 
+.c-red {
+    color: #f44336;
+}
 .c-black {
     color: black;
 }
