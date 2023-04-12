@@ -566,14 +566,23 @@ a {
 }
 /* End Latest Post */
 /* Start Social Media Stats */
-.social-stats .btn-shape {
-    margin: 0;
+.social-stats .twitter{
+    background-color: #d5edfc;
+    color: #1da1f2;
 }
-.social-stats .btn-shape:hover {
-    background-color: unset;
+.social-stats .facebook {
+    background-color: #d3e4fc;
+    color: #1da1f2;
 }
-
-.social-stats .stats {
+.social-stats .youtube {
+    background-color: #ffcdcc;
+    color: #ff0000;
+}
+.social-stats .linkedin {
+    background-color: #d2e4f0;
+    color: #0077b5;
+}
+.social-stats .social-item {
     padding: 15px 15px 15px 70px;
 }
 .social-stats .stats i {
@@ -581,6 +590,34 @@ a {
     left: 0;
     top: 0;
     height: 100%;
-    width: 50px;
+    width: 52px;
+    transition: .3s;
+}
+.social-stats .stats i:hover {
+    transform: rotate(5deg);
+}
+.social-stats .twitter i,
+.social-stats .twitter .btn-shape-rad-p
+{
+    background-color: #1da1f2;
+    color: white;
+}
+.social-stats .facebook i ,
+.social-stats .facebook .btn-shape-rad-p
+{
+    background-color: #1877f2;
+    color: white;
+}
+.social-stats .youtube i ,
+.social-stats .youtube .btn-shape-rad-p
+{
+    background-color: #ff0000;
+    color: white;
+}
+.social-stats .linkedin i ,
+.social-stats .linkedin .btn-shape-rad-p
+{
+    background-color: #0077b5;
+    color: white;
 }
 /* End Social Media Stats */
