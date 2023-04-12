@@ -77,7 +77,7 @@
                     <img src="./images/avatar.png" alt="avatar">
                 </div>
             </div>
-            <h1 class="fw-500 m-20 p-relative">Dashboard</h1>
+            <h1 class="fw-700 m-20 p-relative">Dashboard</h1>
             <!-- Start wrapper -->
             <div class="wrapper d-grid gap-20">
                 <!-- Start welcome -->
@@ -191,7 +191,7 @@
                 </div>
                 <!-- End Tickets Statistics -->
                 <!-- Start Latest News -->
-                <div class="news bg-white p-20 flex-column txt-center gap-20">
+                <div class="news bg-white p-20 rad-10 flex-column txt-center gap-20">
                     <h2>Latest News</h2>
                     <div class="news-row">
                         <img class="rad-6" src="./images/news-01.png">
@@ -231,28 +231,28 @@
                 <div class="tasks bg-white p-20 rad-10">
                     <h2 class="mb-20">Latest Tasks</h2>
                     <div class="container">
-                        <div class="task align-center pb-15">
+                        <div class="task align-center pb-15 mb-15 bb-grey">
                             <div class="text fg-1">
                                 <h4 class="fs-15">Record One New Video</h4>
                                 <p class="c-grey mt-5">Record Python Create Exe Project</p>
                             </div>
                             <i class="fa-regular fa-trash-can"></i>
                         </div>
-                        <div class="task align-center pb-15">
+                        <div class="task align-center pb-15 mb-15 bb-grey">
                             <div class="text fg-1">
                                 <h4>Write Article</h4>
                                 <p class="c-grey mt-5">Write Low Level vs High Level Languages</p>
                             </div>
                             <i class="fa-regular fa-trash-can"></i>
                         </div>
-                        <div class="task align-center pb-15">
+                        <div class="task align-center pb-15 mb-15 bb-grey">
                             <div class="text fg-1">
                                 <h4>Finish Project</h4>
                                 <p class="c-grey mt-5">Publish Academy Programming Project</p>
                             </div>
                             <i class="fa-regular fa-trash-can"></i>
                         </div>
-                        <div class="task align-center pb-15">
+                        <div class="task align-center pb-15 mb-15 bb-grey">
                             <div class="text fg-1">
                                 <h4 class="line-t opacity-50">Attend The Meeting</h4>
                                 <p class="c-grey mt-5 line-t opacity-50">Attend The Project Business Analysis Meeting</p>
@@ -269,27 +269,119 @@
                     </div>
                 </div>
                 <!-- End Latest Tasks -->
-                <div class="search bg-white p-20">
-                    <h2 class="">Top Search Items</h2>
-                    <div class="items-head">
+                <!-- Start Search -->
+                <div class="search bg-white p-20 rad-10">
+                    <h2 class="mb-20">Top Search Items</h2>
+                    <div class="items-head mb-10 c-grey between-flex">
                         <div>Keyword</div>
                         <div>Search Count</div>
                     </div>
-                    <div class="items-search pt-15">
+                    <div class="items-search pt-15 pb-15 between-flex fw-500">
                         <span>Programming</span>
-                        <span>220</span>
+                        <span class="btn-shape bg-eee">220</span>
                     </div>
-                    <div class="items-search pt-15">
+                    <div class="items-search pt-15 pb-15 between-flex fw-500">
                         <span>JavaScript</span>
-                        <span>180</span>
+                        <span class="btn-shape bg-eee">180</span>
                     </div>
-                    <div class="items-search pt-15">
+                    <div class="items-search pt-15 pb-15 between-flex fw-500">
                         <span>PHP</span>
-                        <span>160</span>
+                        <span class="btn-shape bg-eee">160</span>
+                    </div>
+                    <div class="items-search pt-15 pb-15 between-flex fw-500">
+                        <span>Code</span>
+                        <span class="btn-shape bg-eee">145</span>
+                    </div>
+                    <div class="items-search pt-15 pb-15 between-flex fw-500">
+                        <span>Design</span>
+                        <span class="btn-shape bg-eee">110</span>
+                    </div>
+                    <div class="items-search pt-15 pb-15 between-flex fw-500">
+                        <span>Logic</span>
+                        <span class="btn-shape bg-eee">95</span>
                     </div>
                 </div>
-                <!-- Start Search -->
                 <!-- End Search -->
+                <!-- Start Latest Uploads -->
+                <div class="uploads bg-white rad-10 p-20">
+                    <h2 class="mb-20">Latest Uploads</h2>
+                    <div class="items-upload">
+                        <div class="uploads-row between-flex mb-10 pb-10 bb-grey">
+                            <div class="img-text d-flex">
+                                <img class="mr-10" src="./images/pdf.svg">
+                                <div class="upload-item">
+                                    <div class="fw-600">my-file.pdf</div>
+                                    <p class="c-grey fw-500">Elzero</p>
+                                </div>
+                            </div>
+                            <div class="btn-shape bg-eee">2.9mb</div>
+                        </div>
+                        <div class="uploads-row between-flex mb-10 pb-10 bb-grey">
+                            <div class="img-text d-flex">
+                                <img class="mr-10" src="./images/avi.svg">
+                                <div class="upload-item">
+                                    <div class="fw-600">My-Video-File.avi</div>
+                                    <p class="c-grey fw-500">Admin</p>
+                                </div>
+                            </div>
+                            <div class="btn-shape bg-eee">4.9mb</div>
+                        </div>
+                        <div class="uploads-row between-flex mb-10 pb-10 bb-grey">
+                            <div class="img-text d-flex">
+                                <img class="mr-10" src="./images/psd.svg">
+                                <div class="upload-item">
+                                    <div class="fw-600">My-Psd-File.pdf</div>
+                                    <p class="c-grey fw-500">Osama</p>
+                                </div>
+                            </div>
+                            <div class="btn-shape bg-eee">4.5mb</div>
+                        </div>
+                        <div class="uploads-row between-flex mb-10 pb-10 bb-grey">
+                            <div class="img-text d-flex">
+                                <img class="mr-10" src="./images/zip.svg">
+                                <div class="upload-item">
+                                    <div class="fw-600">My-Zip-File.pdf</div>
+                                    <p class="c-grey fw-500">User</p>
+                                </div>
+                            </div>
+                            <div class="btn-shape bg-eee">8.9mb</div>
+                        </div>
+                        <div class="uploads-row between-flex mb-10 pb-10 bb-grey">
+                            <div class="img-text d-flex">
+                                <img class="mr-10" src="./images/dll.svg">
+                                <div class="upload-item">
+                                    <div class="fw-600">My-DLL-File.pdf</div>
+                                    <p class="c-grey fw-500">Admin</p>
+                                </div>
+                            </div>
+                            <div class="btn-shape bg-eee">4.9mb</div>
+                        </div>
+                        <div class="uploads-row between-flex">
+                            <div class="img-text d-flex">
+                                <img class="mr-10" src="./images/eps.svg">
+                                <div class="upload-item">
+                                    <div class="fw-600">My-Eps-File.pdf</div>
+                                    <p class="c-grey fw-500">Designer</p>
+                                </div>
+                            </div>
+                            <div class="btn-shape bg-eee">8.9mb</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Latest Uploads -->
+                <!-- Start Last Project Progress -->
+                <div class="project-progress bg-white rad-10 p-20 p-relative">
+                    <h2 class="mb-20">Last Project Progress</h2>
+                    <ul class="project-item p-relative">
+                        <li class="mt-25">Got The Project</li>
+                        <li class="mt-25">Started The Project</li>
+                        <li class="mt-25">The Project About To Finish</li>
+                        <li class="mt-25">Test The Project</li>
+                        <li class="mt-25">Finish The Project & Get Money</li>
+                    </ul>
+                    <img class="hide-mobile" src="./images/project.png">
+                </div>
+                <!-- End Last Project Progress -->
             </div>
             <!-- End wrapper -->
         </div>

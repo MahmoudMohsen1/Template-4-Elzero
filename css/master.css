@@ -51,6 +51,7 @@ a {
 .btn-shape:hover {
     background-color: var(--blue-alt-color);
 }
+
 /* End Components */
 /* Start sidebar */
 .sidebar {
@@ -208,14 +209,12 @@ a {
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     }
 }
+/* End Wrapper */
 /* Start Welcome */
 
 /* End Welcome */
 .welcome .intro {
     padding-bottom: 30px;
-}
-.welcome .intro .hide-mobile{
-    display: none;
 }
 .welcome .intro .avatar {
     width: 64px;
@@ -378,7 +377,7 @@ a {
     flex-basis: 100%;
 }
 .news .news-row:not(:last-child) {
-    border-bottom: 1px solid #f0f0ff;
+    border-bottom: 1px solid #eee;
 }
 .news .news-row .label {
     margin: 10px auto 30px;
@@ -386,7 +385,7 @@ a {
     border-radius: 6px;
     font-size: 13px;
 }
-.news .news-row:last-of-type .label {
+.news .news-row:last-child {
     margin-bottom: 0;
 }
 @media (min-width: 767px){
@@ -417,5 +416,91 @@ a {
 }
 /* End Latest News */
 /* Start Search */
+.search .items-search .btn-shape {
+    font-weight: 400;
+    margin: 0;
+}
+.search .items-search .btn-shape:hover {
+    background-color: #eee;
+}
 /* End Search */
-/* End Wrapper */
+/* Start Latest Uploads */
+.uploads .items-upload .uploads-row img {
+    width: 40px;
+}
+.uploads .items-upload .uploads-row .btn-shape {
+    font-weight: 400;
+    margin: 0;
+}
+.uploads .items-upload .uploads-row .btn-shape:hover {
+    background-color: #eee;
+}
+/* End Latest Uploads */
+/* Start Last Project Progress */
+.project-progress .project-item::after {
+    content: "";
+    height: 100%;
+    width: 2.5px;
+    background-color: var(--blue-color);
+    position: absolute;
+    top: 0;
+    left: 11.5px;
+    z-index: 2;
+}
+.project-progress .project-item li {
+    font-weight: 500;
+    padding-left: 40px;
+    position: relative;
+}
+.project-progress .project-item li::before,
+.project-progress .project-item li::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    
+}
+.project-progress .project-item li:first-of-type:before,
+.project-progress .project-item li:nth-of-type(2):before,
+.project-progress .project-item li:nth-of-type(3):before,
+.project-progress .project-item li:nth-of-type(4):before
+{
+    height: 18px;
+    width: 18px;
+    background-color: var(--blue-color);
+    left: 3.7px;
+    z-index: 5;
+}
+.project-progress .project-item li::after {
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--blue-color);
+    background-color: white;
+    z-index: 3;
+}
+.project-progress .project-item li:nth-of-type(4):before {
+    animation: change-opacity 2s linear infinite;
+}
+@keyframes change-opacity {
+    0%, 20%, 80%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@media (min-width: 767px){
+    .project-progress .hide-mobile {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 160px;
+        opacity: .1;
+    }
+}
+/* End Last Project Progress */
+
