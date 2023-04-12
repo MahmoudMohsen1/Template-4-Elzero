@@ -503,4 +503,48 @@ a {
     }
 }
 /* End Last Project Progress */
-
+/* Start Reminders */
+.reminders ul li .reminder-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 100%;
+}
+.reminders ul li:first-of-type .reminder-item::before {
+    background-color: var(--blue-color);
+}
+.reminders ul li:nth-of-type(2) .reminder-item::before {
+    background-color: var(--green-color);
+}
+.reminders ul li:nth-of-type(3) .reminder-item::before {
+    background-color: var(--orange-color);
+}
+.reminders ul li:last-of-type .reminder-item::before {
+    background-color: var(--red-color);
+}
+.reminders ul li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.reminders ul li:first-of-type::before {
+    background-color: var(--blue-color);
+}
+.reminders ul li:nth-of-type(2)::before {
+    background-color: var(--green-color);
+}
+.reminders ul li:nth-of-type(3)::before {
+    background-color: var(--orange-color);
+}
+.reminders ul li:last-of-type::before {
+    background-color: var(--red-color);
+}
+/* End Reminders */

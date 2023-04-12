@@ -64,6 +64,9 @@
 .pb-15 {
     padding-bottom: 15px;
 }
+.pl-15 {
+    padding-left: 15px;
+}
 .m-0 {
     margin: 0;
 }
@@ -82,6 +85,9 @@
 .mt-10 {
     margin-top: 10px;
 }
+.mt-15 {
+    margin-top: 15px;
+}
 .mt-25 {
     margin-top: 25px;
 }
@@ -90,6 +96,9 @@
 }
 .mb-5 {
     margin-bottom: 5px;
+}
+.mb-8 {
+    margin-bottom: 8px;
 }
 .mb-10 {
     margin-bottom: 10px;
@@ -100,11 +109,17 @@
 .mb-20 {
     margin-bottom: 20px;
 }
+.mb-25 {
+    margin-bottom: 25px;
+}
 .mb-30 {
     margin-bottom: 30px;
 }
 .mr-10 {
     margin-right: 10px;
+}
+.ml-30 {
+    margin-left: 30px;
 }
 /* End padding + margin */
 /* Start Font */
@@ -113,6 +128,9 @@
 }
 .fs-14 {
     font-size: 14px;
+}
+.fs-13 {
+    font-size: 13px;
 }
 .fs-15 {
     font-size: 15px;
@@ -140,6 +158,9 @@
 }
 .f-mono {
     font-family: monospace;
+}
+.fw-bold {
+    font-weight: bold;
 }
 .fw-400 {
     font-weight: 400;
