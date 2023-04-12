@@ -566,4 +566,21 @@ a {
 }
 /* End Latest Post */
 /* Start Social Media Stats */
+.social-stats .btn-shape {
+    margin: 0;
+}
+.social-stats .btn-shape:hover {
+    background-color: unset;
+}
+
+.social-stats .stats {
+    padding: 15px 15px 15px 70px;
+}
+.social-stats .stats i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+}
 /* End Social Media Stats */
