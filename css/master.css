@@ -548,3 +548,20 @@ a {
     background-color: var(--red-color);
 }
 /* End Reminders */
+/* Start Latest Post */
+.latest-post .heading img {
+    width: 50px;
+}
+.latest-post .text {
+    padding: 20px 0;
+    line-height: 1.8;
+    font-weight: 500;
+    min-height: 140px;
+    text-align: center;
+}
+@media(min-width: 767px){
+    .latest-post .text {
+        text-align: left;
+    }
+}
+/* End Latest Post */
