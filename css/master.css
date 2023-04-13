@@ -623,22 +623,25 @@ a {
 /* End Social Media Stats */
 /* Start Projects */
 .projects {
-    width: calc(100vw - 114px);
+    width: calc(100vw - 95px);
     margin-left: 10px;
     margin-right: 10px;
 }
 @media (min-width: 767px){
     .projects {
         width: calc(100vw - 269px);
+        margin-left: 20px;
+        margin-right: 20px;
     } 
 }
 .table-container {
-    overflow: scroll;
+    overflow-x: scroll;
 }
 .projects table {
     min-width: 1000px;
     width: 100%;
     border-collapse: collapse;
+    font-size: 15px;
 }
 .projects table th,
 .projects table td
@@ -649,6 +652,9 @@ a {
 .projects table td {
     border: 1px solid #eee;
     font-weight: 500
+}
+.projects table thead {
+    height: 50px;
 }
 .projects table thead tr{
     background-color: #eeeeee;
@@ -675,6 +681,7 @@ a {
     right: calc(20px * 2);
 }
 .projects table td img:last-child:not(:nth-child(2), :nth-child(3)) {
-    right: calc(20px * 3);
+    top: -40px;
+    right: calc(-20px * 3);
 }
 /* End Projects */
