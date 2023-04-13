@@ -621,3 +621,60 @@ a {
     color: white;
 }
 /* End Social Media Stats */
+/* Start Projects */
+.projects {
+    width: calc(100vw - 114px);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media (min-width: 767px){
+    .projects {
+        width: calc(100vw - 269px);
+    } 
+}
+.table-container {
+    overflow: scroll;
+}
+.projects table {
+    min-width: 1000px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.projects table th,
+.projects table td
+{
+    text-align: left;
+    padding: 15px;
+}
+.projects table td {
+    border: 1px solid #eee;
+    font-weight: 500
+}
+.projects table thead tr{
+    background-color: #eeeeee;
+}
+.projects table tbody tr {
+    transition: .5s;
+}
+.projects table tbody tr:hover {
+    background-color: #faf7f7;
+}
+.projects table .team {
+    width: 183px;
+}
+.projects table td img {
+    width: 35px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+}
+.projects table td img:nth-child(2) {
+    right: 20px;
+}
+.projects table td img:nth-child(3) {
+    right: calc(20px * 2);
+}
+.projects table td img:last-child:not(:nth-child(2), :nth-child(3)) {
+    right: calc(20px * 3);
+}
+/* End Projects */

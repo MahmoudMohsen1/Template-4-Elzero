@@ -67,6 +67,9 @@
 .pb-15 {
     padding-bottom: 15px;
 }
+.pb-20 {
+    padding-bottom: 20px;
+}
 .pl-15 {
     padding-left: 15px;
 }
@@ -123,6 +126,12 @@
 }
 .mr-15 {
     margin-right: 15px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.ml-20 {
+    margin-left: 20px;
 }
 .ml-30 {
     margin-left: 30px;
@@ -199,9 +208,11 @@
 }
 .bg-orange {
     background-color: #f59e0b;
-}
-.bg-green {
+}.bg-green {
     background-color: #22c55e;
+}
+.bg-red {
+    background-color: #f44336;
 }
 .c-blue {
     color: #0075ff;
