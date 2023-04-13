@@ -180,21 +180,21 @@ a {
     width: 32px;
 }
 /* End header */
-.content > h1::before,
-.content > h1::after
+.main-title::before,
+.main-title::after
 {
     content: "";
     height: 3.5px;
     position: absolute;
     bottom: -10px;
 }
-.content > h1::before {
+.main-title::before {
     left: 0;
-    width: 50px;
+    width: 40px;
     background-color: black;
 }
-.content > h1::after {
-    left: 50px;
+.main-title::after {
+    left: 40px;
     width: 75px;
     background-color: white;
 }
