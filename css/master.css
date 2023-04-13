@@ -681,7 +681,6 @@ a {
     right: calc(20px * 2);
 }
 .projects table td img:last-child:not(:nth-child(2), :nth-child(3)) {
-    top: -40px;
-    right: calc(-20px * 3);
+    right: calc(20px * 3);
 }
 /* End Projects */
