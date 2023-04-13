@@ -694,3 +694,24 @@ i.fa-regular.fa-trash-can:hover {
     right: calc(20px * 3);
 }
 /* End Projects */
+/* End Dashboard page */
+/* Start Settings page */
+.setting-page {
+    grid-template-columns: 1fr;
+}
+@media (min-width: 767px){
+    .setting-page {
+        gap: 20px;
+        margin: 20px;
+    }
+}
+/* End Settings page */
+/* Start site control */
+.site-control .web-text {
+    width: fit-content;
+}
+.site-control textarea {
+    height: 150px;
+    border: 1px solid #cccccc;
+}
+/* End site control */
