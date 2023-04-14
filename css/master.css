@@ -51,6 +51,9 @@ a {
 .btn-shape:hover {
     background-color: var(--blue-alt-color);
 }
+.btn-shape-rad-p:hover {
+    background-color: var(--blue-alt-color);
+}
 
 /* End Components */
 /* Start sidebar */
@@ -765,3 +768,21 @@ i.fa-regular.fa-trash-can:hover {
     border: 1px solid #cccccc;
 }
 /* End site control */
+/* Start General info */
+.general-info form input[type="email"]{
+    background-color: #f0f4f8;
+    color: #bbbbbb;
+    width: calc(100% - 80px);
+}
+.general-info form input[type="email"]:hover {
+    cursor: not-allowed;
+}
+/* End General info */
+/* Start Security info */
+.security-info .button {
+    font-size: 16px;
+}
+.security-info .button.three:hover {
+    background-color: #eee;
+}
+/* End Security info */

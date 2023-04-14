@@ -98,6 +98,57 @@
                 <textarea class="outline-n w-full resize-n p-10 rad-6" placeholder="Close Message Content"></textarea>
             </div>
             <!-- End site control -->
+            <!-- Start General info -->
+            <div class="general-info bg-white rad-10 p-20">
+                <h2 class="mb-10">General Info</h2>
+                <p class="c-grey fw-500 fs-15 mb-20">General Information About Your Account</p>
+                <form action="">
+                    <div class="mb-10">
+                        <label class="c-grey mb-10 d-block fs-14 fw-500" for="first-name">First Name</label>
+                        <input class="p-10 rad-6 b-none outline-n b-ccc w-full" placeholder="First Name" type="text" id="first-name">
+                    </div>
+                    <div class="mb-15">
+                        <label class="c-grey mb-10 d-block fs-14 fw-500" for="Last-name">Last Name</label>
+                        <input class="p-10 rad-6 b-none outline-n b-ccc w-full" placeholder="Last Name" type="text" id="Last-name">
+                    </div>
+                    <div>
+                        <label class="c-grey mb-10 d-block fs-14 fw-500" for="email">Email</label>
+                        <input class="p-10 rad-6 b-none outline-n b-ccc mr-10" disabled placeholder="o@nn.sa" type="email" id="email">
+                        <a class="fs-16 c-blue" href="#">Change</a>
+                    </div>
+                </form>
+            </div>
+            <!-- End General info -->
+            <!-- Start Security info -->
+            <div class="security-info bg-white rad-10 p-20">
+                <h2 class="mb-10">Security Info</h2>
+                <p class="c-grey fw-500 fs-15 mb-20">Security Information About Your Account</p>
+                <div class="info-row between-flex pb-15 bb-grey mb-15">
+                    <span>
+                        <h4 class="fw-500 mb-5">Password</h4>
+                        <p class="c-grey fs-13 fw-500">Last Change On 25/10/2021</p>
+                    </span>
+                    <a class="button fs-16 bg-blue c-white btn-shape-rad-p" href="#">Change</a>
+                </div>
+                <div class="info-row between-flex pb-15 bb-grey mb-15">
+                    <span>
+                        <h4 class="fw-500 mb-5">Two-Factor Authentication</h4>
+                        <p class="c-grey fs-13 fw-500">Enable/Disable The Feature</p>
+                    </span>
+                    <div class="toggle-switch">
+                        <input class="input-check" type="checkbox" name="check" id="check2">
+                        <label for="check2"></label>
+                    </div>
+                </div>
+                <div class="info-row between-flex pb-15 bb-grey mb-15">
+                    <span>
+                        <h4 class="fw-500 mb-5">Devices</h4>
+                        <p class="c-grey fs-13 fw-500">Check The Login Devices List</p>
+                    </span>
+                    <a class="button three fs-16 bg-eee c-black btn-shape-rad-p" href="#">Devices</a>
+                </div>
+            </div>
+            <!-- End Security info -->
         </div>
 </body>
 </html>

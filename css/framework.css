@@ -259,8 +259,11 @@
 .b-none {
     border: none;
 }
+.b-ccc {
+    border: 1px solid #ccc;
+}
 .b-grey {
-    border-top: 1px solid #eee;
+    border: 1px solid #eee;
 }
 .bt-grey {
     border-top: 1px solid #eee;
