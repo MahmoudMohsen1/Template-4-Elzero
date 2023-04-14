@@ -786,3 +786,24 @@ i.fa-regular.fa-trash-can:hover {
     background-color: #eee;
 }
 /* End Security info */
+/* Start Social info */
+.security-info .security-item {
+    background-color: #f6f6f6;
+}
+.security-info .security-item input {
+    background-color: #f6f6f6;
+    padding-left: 50px;
+}
+.security-info .security-item input + label {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    border-right: 1px solid #ccc;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888888;
+}
+/* End Social info */
