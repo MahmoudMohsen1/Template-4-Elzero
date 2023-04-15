@@ -704,6 +704,7 @@ i.fa-regular.fa-trash-can:hover {
 }
 @media (min-width: 767px){
     .setting-page {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         gap: 20px;
         margin: 20px;
     }
@@ -789,10 +790,13 @@ i.fa-regular.fa-trash-can:hover {
 /* Start Social info */
 .security-info .security-item {
     background-color: #f6f6f6;
+    border: 1px solid #ccc;
 }
 .security-info .security-item input {
     background-color: #f6f6f6;
     padding-left: 50px;
+    height: 40px;
+    width: 100%;
 }
 .security-info .security-item input + label {
     position: absolute;
@@ -800,10 +804,64 @@ i.fa-regular.fa-trash-can:hover {
     top: 0;
     border-right: 1px solid #ccc;
     height: 100%;
-    width: 40px;
+    width: 37px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #888888;
+    transition: .3s;
+}
+.security-info .security-item input:focus-within + label {
+    color: black;
 }
 /* End Social info */
+/* Start Widgets Control */
+.widgets-control .control input[type="checkbox"] {
+    appearance: none;
+}
+.widgets-control .control input[type="checkbox"] + label::before,
+.widgets-control .control input[type="checkbox"]:checked + label::before
+{
+    content: "\f00c";
+    font-family: var(--font-awesome-family);
+    font-weight: 900;
+    width: 18px;
+    height: 18px;
+    background-color: var(--blue-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    transform-origin: 50% 53%;
+    left: 4px;
+    border-radius: 5px;
+    border: none;
+    z-index: 2;
+    font-size: 13px;
+    transition: .3s;
+}
+.widgets-control .control input[type="checkbox"] + label::before
+{
+    transform: rotateZ(360deg) scale3d(0, 0, 0);
+}
+.widgets-control .control input[type="checkbox"]:checked + label::before
+{
+    transform: rotateZ(0) scale3d(1, 1, 1);
+}
+.widgets-control .control input[type="checkbox"] + label::after {
+    content: "";
+    width: 15.8px;
+    height: 14.8px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    border-radius: 5px;
+    border: 2px solid #888888;
+}
+.widgets-control .control input[type="checkbox"] + label {
+    padding-left: 30px;
+    font-weight: 500;
+}
+/* End Widgets Control */
