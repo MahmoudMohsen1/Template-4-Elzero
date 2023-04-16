@@ -1036,3 +1036,25 @@ i.fa-regular.fa-trash-can:hover {
     }
 }
 /* End Latest Activities */
+/* Start Elzero Dashboard */
+.elzero-dashboard .team {
+    height: 80px;
+    display: flex;
+    align-items: end;
+}
+.elzero-dashboard .team img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+}
+.elzero-dashboard .team img:nth-child(2){
+    left: calc(-15px);
+}
+.elzero-dashboard .team img:nth-child(3){
+    left: calc(-25px);
+}
+.elzero-dashboard .team img:nth-child(4){
+    left: calc(-45px);
+}
+/* End Elzero Dashboard */
