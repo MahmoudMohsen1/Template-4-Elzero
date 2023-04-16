@@ -60,33 +60,29 @@ a {
 .sidebar {
     min-height: 100vh;
     box-shadow: 0 0 10px #ddd;
+    width: 250px;
 }
 
 .sidebar > h3 {
     position: relative;
-    line-height: normal;
     margin-bottom: 50px;
-    letter-spacing: -.5px;
 }
 
-.sidebar > h3::before,
-.sidebar > h3::after
-{
+.sidebar > h3::before {
+    width: 80px;
+    height: 2px;
+    bottom: -20px;
+}
+
+.sidebar > h3::before, .sidebar > h3::after {
     content: "";
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     background-color: black;
 }
-
-.sidebar > h3::before{
-    width: calc(100% - 100px);
-    height: 2px;
-    bottom: -22px;
-}
-
 .sidebar > h3::after {
-    bottom: -31px;
+    bottom: -29px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -98,7 +94,6 @@ a {
     color: black;
     transition: .2s;
     margin-bottom: 5px;
-    width: 174px;
     font-size: 14px;
 }
 
@@ -144,9 +139,8 @@ a {
     padding-left: 30px;
     margin-left: 5px;
     width: 160px;
-    font-size: 13.33px;
+    font-size: 12.33px;
     transition: width .3s ease;
-    font-weight: 500;
 }
 .header .search::before {
     content: "\f002";
@@ -235,9 +229,6 @@ a {
     border-style: solid;
     border-width: 1px;
     border-color: #eee transparent;
-}
-.welcome .body > div {
-    font-weight: 500;
 }
 .welcome .body > div:not(:last-child) {
     margin-bottom: 20px;
@@ -461,7 +452,6 @@ i.fa-regular.fa-trash-can:hover {
     z-index: 2;
 }
 .project-progress .project-item li {
-    font-weight: 500;
     padding-left: 40px;
     position: relative;
 }
@@ -568,7 +558,6 @@ i.fa-regular.fa-trash-can:hover {
 .latest-post .text {
     padding: 20px 0;
     line-height: 1.8;
-    font-weight: 500;
     min-height: 140px;
     text-align: center;
 }
@@ -664,7 +653,6 @@ i.fa-regular.fa-trash-can:hover {
 }
 .projects table td {
     border: 1px solid #eee;
-    font-weight: 500
 }
 .projects table thead {
     height: 50px;
@@ -780,6 +768,9 @@ i.fa-regular.fa-trash-can:hover {
 }
 /* End General info */
 /* Start Security info */
+.security-info div span {
+    height: 55px;
+}
 .security-info .button {
     font-size: 16px;
 }
@@ -788,17 +779,17 @@ i.fa-regular.fa-trash-can:hover {
 }
 /* End Security info */
 /* Start Social info */
-.security-info .security-item {
+.social-info .security-item {
     background-color: #f6f6f6;
     border: 1px solid #ccc;
 }
-.security-info .security-item input {
+.social-info .security-item input {
     background-color: #f6f6f6;
     padding-left: 50px;
     height: 40px;
     width: 100%;
 }
-.security-info .security-item input + label {
+.social-info .security-item input + label {
     position: absolute;
     left: 0px;
     top: 0;
@@ -811,7 +802,7 @@ i.fa-regular.fa-trash-can:hover {
     color: #888888;
     transition: .3s;
 }
-.security-info .security-item input:focus-within + label {
+.social-info .security-item input:focus-within + label {
     color: black;
 }
 /* End Social info */
@@ -862,7 +853,6 @@ i.fa-regular.fa-trash-can:hover {
 }
 .widgets-control .control input[type="checkbox"] + label {
     padding-left: 30px;
-    font-weight: 500;
 }
 /* End Widgets Control */
 /* Start Backup Manager */
@@ -892,14 +882,32 @@ i.fa-regular.fa-trash-can:hover {
     background-color: var(--blue-color);
     border-radius: 50%;
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 4.7px;
+    top: 50%;
     transition: .3s;
-}
-.backup-manager .date input[type="radio"]+ label::after {
-    transform: scale3d(0,0,0);
+    transform: translateY(-50%) scale3d(0,0,0);
 }
 .backup-manager .date input[type="radio"]:checked + label::after {
-    transform: scale3d(1,1,1);
+    transform: translateY(-50%) scale3d(1,1,1);
+}
+.backup-manager .server {
+    border: 2px solid #eee;
+}
+.backup-manager .servers input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+.backup-manager .servers input[type="radio"]:checked + label {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+@media (min-width: 767px){
+    .backup-manager .servers {
+        display: flex;
+        gap: 8px;
+    }
+    .backup-manager .servers > div {
+        flex-basis: calc(100% / 3);
+    }
 }
 /* End Backup Manager */

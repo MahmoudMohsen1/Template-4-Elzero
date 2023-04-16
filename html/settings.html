@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Open Sans Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font awosome -->
     <link rel="stylesheet" href="../css/all.min.css">
-    <!-- normalize File
-    <link rel="stylesheet" href="../css/normalize.css"> -->
     <!-- Framework css file -->
     <link rel="stylesheet" href="../css/framework.css">
     <!-- master css file -->
     <link rel="stylesheet" href="../css/master.css">
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
     <!-- title -->
     <title>Settings</title>
 </head>
@@ -68,7 +66,7 @@
         </div>
         <!-- Start content -->
         <!-- Start Header -->
-        <div class="content bg-white-smoke w-full pb-20">
+        <div class="content bg-white-smoke w-full">
             <div class="header bg-white p-15 between-flex">
                 <div class="search p-relative">
                     <input class="p-10 rad-10" placeholder="Type A Keyword" type="search">
@@ -79,7 +77,7 @@
                 </div>
             </div>
         <!-- End Header -->
-        <h1 class="fw-700 m-20 mb-40 p-relative main-title">Settings</h1>
+        <h1 class="m-20 mb-40 p-relative main-title">Settings</h1>
         <div class="setting-page d-grid gap-10 m-10">
             <!-- Start site control -->
             <div class="site-control p-20 rad-10 bg-white">
@@ -140,7 +138,7 @@
                         <label for="check2"></label>
                     </div>
                 </div>
-                <div class="info-row between-flex pb-15 mb-15">
+                <div class="info-row between-flex pb-15">
                     <span>
                         <h4 class="fw-500 mb-5">Devices</h4>
                         <p class="c-grey fs-13 fw-500">Check The Login Devices List</p>
@@ -150,7 +148,7 @@
             </div>
             <!-- End Security info -->
             <!-- Start Social info -->
-            <div class="security-info bg-white rad-10 p-20">
+            <div class="social-info bg-white rad-10 p-20">
                 <h2 class="mb-10">Social Info</h2>
                 <p class="c-grey fw-500 fs-15 mb-20">Social Media Information</p>
                 <div class="security-items">
@@ -215,7 +213,7 @@
             <div class="backup-manager bg-white p-20 rad-10">
                 <h2 class="mb-10">Backup Manager</h2>
                 <p class="c-grey mb-20 fs-15 fw-500">Control Backup Time And Location</p>
-                <form>
+                <form class="pb-15 bb-grey">
                     <div class="date mb-15">
                         <input checked type="radio" id="daily" name="date">
                         <label class="fs-16 fw-500 pl-30 p-relative" for="daily">Daily</label>
@@ -224,11 +222,34 @@
                         <input type="radio" id="weekly" name="date">
                         <label class="fs-16 fw-500 pl-30 p-relative" for="weekly">Weekly</label>
                     </div>
-                    <div class="date mb-15">
+                    <div class="date">
                         <input type="radio" id="monthly" name="date">
                         <label class="fs-16 fw-500 pl-30 p-relative" for="monthly">Monthly</label>
                     </div>
                 </form>
+                <div class="servers pt-20">
+                    <div>
+                        <input type="radio" id="megaman" name="server">
+                        <label class="server d-block rad-10 w-full mb-15 txt-center p-15" for="megaman">
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <span class="fs-15 fw-500">Megaman</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input checked type="radio" id="zero" name="server">
+                        <label class="server d-block rad-10 w-full mb-15 txt-center p-15" for="zero">
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <span class="fs-15 fw-500">Zero</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sigma" name="server">
+                        <label class="server d-block rad-10 w-full mb-15 txt-center p-15" for="sigma">
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <span class="fs-15 fw-500">Sigma</span>
+                        </label>
+                    </div>
+                </div>
             </div>
             <!-- End Backup Manager -->
         </div>
