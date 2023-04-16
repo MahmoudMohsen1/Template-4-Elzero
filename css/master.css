@@ -716,6 +716,7 @@ i.fa-regular.fa-trash-can:hover {
     background-color: #0075ff;
     display: block;
     transition: .3s;
+    cursor: pointer;
 }
 .toggle-switch .input-check:checked + label {
     background-color: #cccccc;
@@ -944,12 +945,12 @@ i.fa-regular.fa-trash-can:hover {
 }
 .information .box .toggle-switch .input-check + label::after,
 .information .box .toggle-switch .input-check:checked + label::after {
-    width: 15px;
-    height: 15px;
-    font-size: 10px;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
 }
 .information .box .toggle-switch .input-check:checked + label::after {
-    right: 59px;
+    right: 62px;
 }
 .information .box {
     transition: .3s;
@@ -986,3 +987,52 @@ i.fa-regular.fa-trash-can:hover {
     }
 }
 /* End profile information */
+/*  Start My Skills  */
+.skills .skill-lang span:hover {
+    background-color: #eee;
+}
+.skills .skill-lang {
+    text-align: center;
+}
+@media (min-width: 767px){
+    .skills {
+        width: 36.5%;
+    }
+    .skills .skill-lang {
+        text-align: start;
+    }
+}
+/*  End My Skills  */
+/* Start Latest Activities */
+.latest-activities .activitie-item img {
+    width: 63px;
+}
+@media (min-width: 767px){
+    .pro-wrapper {
+        flex-direction: row;
+    }
+    .latest-activities {
+        flex-grow: 1;
+    }
+    .latest-activities .activitie-item {
+        display: flex;
+        align-items: flex-start;
+    }
+    .latest-activities .activitie-item .text{
+        flex-grow: 1;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .latest-activities .activitie-item .text {
+        display: flex;
+        justify-content: space-between;
+    }
+    .latest-activities .activitie-item .text p {
+        margin-bottom: 0;
+    }
+
+    .latest-activities .activitie-item .text .box:last-child {
+        text-align: end;
+    }
+}
+/* End Latest Activities */
