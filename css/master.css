@@ -1039,8 +1039,15 @@ i.fa-regular.fa-trash-can:hover {
 /* Start Project page */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 20px;
+}
+@media (max-width: 767px){
+    .projects-container {
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 10px;
+        margin: 10px;
+    }
 }
 /* Start Elzero Dashboard */
 .elzero-dashboard .date {
@@ -1059,17 +1066,20 @@ i.fa-regular.fa-trash-can:hover {
     border: 2px solid white;
     position: relative;
 }
+.elzero-dashboard .team img:hover {
+    z-index: 1;
+}
 .elzero-dashboard .team img:nth-child(2){
-    left: calc(-15px);
+    right: 15px;
 }
 .elzero-dashboard .team img:nth-child(3){
-    left: calc(-25px);
+    right: calc(2 * 15px);
 }
 .elzero-dashboard .team img:nth-child(4){
-    left: calc(-45px);
+    right: calc(3 * 15px);
 }
 .elzero-dashboard .team img:nth-child(5){
-    left: calc(-60px);
+    right: calc(4 * 15px);
 }
 .elzero-dashboard .do {
     align-items: flex-start;
@@ -1088,7 +1098,7 @@ i.fa-regular.fa-trash-can:hover {
 }
 .elzero-dashboard .info .prog {
     width: 260px;
-    height: 6px;
+    height: 8px;
 }
 .elzero-dashboard .info .prog span {
     position: absolute;
