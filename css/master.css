@@ -1036,7 +1036,18 @@ i.fa-regular.fa-trash-can:hover {
     }
 }
 /* End Latest Activities */
+/* Start Project page */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
 /* Start Elzero Dashboard */
+.elzero-dashboard .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
 .elzero-dashboard .team {
     height: 80px;
     display: flex;
@@ -1057,4 +1068,42 @@ i.fa-regular.fa-trash-can:hover {
 .elzero-dashboard .team img:nth-child(4){
     left: calc(-45px);
 }
+.elzero-dashboard .team img:nth-child(5){
+    left: calc(-60px);
+}
+.elzero-dashboard .do {
+    align-items: flex-start;
+}
+.elzero-dashboard .do span:not(:last-child) {
+    margin-bottom: 15px;
+}
+@media (min-width: 676px){
+    .elzero-dashboard .do {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .elzero-dashboard .do span:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+.elzero-dashboard .info .prog {
+    width: 260px;
+    height: 6px;
+}
+.elzero-dashboard .info .prog span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+@media (min-width: 676px){
+    .elzero-dashboard .info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .elzero-dashboard .info .prog {
+        margin-bottom: 0;
+    }
+}
 /* End Elzero Dashboard */
+/* End Project Page */

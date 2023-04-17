@@ -25,6 +25,9 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+.flex-end {
+    justify-content: flex-end;
+}
 .d-grid {
     display: grid;
 }
@@ -152,6 +155,9 @@
 }
 .mr-20 {
     margin-right: 20px;
+}
+.ml-5 {
+    margin-left: 5px;
 }
 .ml-20 {
     margin-left: 20px;
@@ -319,5 +325,8 @@
 .btn-shape-rad-p {
     padding: 4px 10px;
     border-radius: 6px;
+}
+.btn-shape-rad-p.n-hover-eee:hover {
+    background-color: #eeeeee;
 }
 /* End button */
