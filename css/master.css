@@ -1039,12 +1039,12 @@ i.fa-regular.fa-trash-can:hover {
 /* Start Project page */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: minmax(200px, 1fr);
     gap: 20px;
 }
-@media (max-width: 767px){
+@media (min-width: 767px){
     .projects-container {
-        grid-template-columns: minmax(200px, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         gap: 10px;
         margin: 10px;
     }
@@ -1154,3 +1154,50 @@ i.fa-regular.fa-trash-can:hover {
     font-size: 13px;
 }
 /* End Course Page */
+/* Start friends Page */
+.friends-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px){
+    .friends-container {
+        gap: 10px;
+        margin: 10px;
+    }
+}
+.friends-container .box .contact {
+    position: absolute;
+    display: flex;
+    gap: 4px;
+    top: -10px;
+    left: -10px;
+}
+.friends-container .box .contact > span {
+    background-color: #eee;
+    color: #666666;
+    border-radius: 50%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    width: 33px;
+    transition: .3s;
+}
+.friends-container .box .contact > span:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+.friends-container .box .info img {
+    width: 100px;
+}
+.friends-container .box .text .vip {
+    font-size: 40px;
+    opacity: .2;
+}
+.friends-container .box .footer > div span:hover:first-child {
+    background-color: var(--blue-color);
+}
+.friends-container .box .footer > div span:hover:last-child {
+    background-color: var(--red-color);
+}
+/* End friends Page */
