@@ -197,6 +197,9 @@
 .txt-center {
     text-align: center;
 }
+.txt-left {
+    text-align: left;
+}
 .f-normal {
     line-height: normal;
 }
@@ -245,6 +248,18 @@
 }
 .bg-red {
     background-color: #f44336;
+}
+.bg-blue-opacity-20 {
+    background-color: rgb(0 117 255 / 20%);
+}
+.bg-red-opacity-20 {
+    background-color: rgb(244 67 54 / 20%);
+}
+.bg-orange-opacity-20 {
+    background-color: rgb(245 158 11 / 20%);
+}
+.bg-green-opacity-20 {
+    background-color: rgb(34 197 94 / 20%);
 }
 .c-blue {
     color: #0075ff;
@@ -331,5 +346,9 @@
 }
 .btn-shape-rad-p.n-hover-eee:hover {
     background-color: #eeeeee;
+}
+.button-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
 }
 /* End button */

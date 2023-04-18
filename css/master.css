@@ -1201,3 +1201,20 @@ i.fa-regular.fa-trash-can:hover {
     background-color: var(--red-color);
 }
 /* End friends Page */
+/* Start Files Page */
+/* .files-container {
+    grid-template-columns: ;
+} */
+.files-container .files-stats .item-column .item-left i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.files-container .files-stats .button-shape {
+    width: fit-content;
+    margin: 15px auto 0;
+    padding: 10px 15px;
+}
+/* End Files Page */
