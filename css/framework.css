@@ -66,6 +66,9 @@
 .p-20 {
     padding: 20px;
 }
+.pt-10 {
+    padding-top: 10px;
+}
 .pt-15 {
     padding-top: 15px;
 }
@@ -108,6 +111,9 @@
 .mt-10 {
     margin-top: 10px;
 }
+.mt-13 {
+    margin-top: 13px;
+}
 .mt-15 {
     margin-top: 15px;
 }
@@ -128,6 +134,9 @@
 }
 .mb-10 {
     margin-bottom: 10px;
+}
+.mb-13 {
+    margin-bottom: 13px;
 }
 .mb-15 {
     margin-bottom: 15px;
