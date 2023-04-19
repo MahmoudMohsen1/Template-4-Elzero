@@ -1040,13 +1040,14 @@ i.fa-regular.fa-trash-can:hover {
 .projects-container {
     display: grid;
     grid-template-columns: minmax(200px, 1fr);
-    gap: 20px;
+    gap: 10px;
+    margin: 10px;
 }
 @media (min-width: 767px){
     .projects-container {
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-        gap: 10px;
-        margin: 10px;
+        gap: 20px;
+        margin: 20px;
     }
 }
 /* Start Elzero Dashboard */
@@ -1267,3 +1268,69 @@ i.fa-regular.fa-trash-can:hover {
     left: 10px;
 }
 /* End Files Page */
+/* Start Plans Page */
+.plans-container {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+}
+@media (min-width: 767px){
+    .plans-container {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        gap: 20px;
+        margin: 20px;
+    }
+}
+.plans-container .plans .cost {
+    color: white;
+    padding: 20px;
+}
+.plans-container .plans .cost::before {
+    content: "";
+    width: calc(100% - 4.8px);
+    height: calc(100% - 4.8px);
+    border: 3px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.plans-container .plans .cost span {
+    position: relative;
+}
+.plans-container .plans .cost span::before {
+    content: "$";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-size: 25px;
+}
+.plans-container .plans.free .cost {
+    background-color: var(--green-color);
+    border: 3px solid var(--green-color);
+}
+.plans-container .plans.basic .cost {
+    background-color: var(--blue-color);
+    border: 3px solid var(--blue-color);
+}
+.plans-container .plans.premium .cost {
+    background-color: var(--orange-color);
+    border: 3px solid var(--orange-color);
+}
+.plans-container .plans .cost span {
+    font-size: 40px;
+}
+.plans-container .plans li .yes {
+    color: var(--green-color);
+    font-size: 18px;
+}
+.plans-container .plans li .no {
+    color: var(--red-color);
+    font-size: 18px;
+}
+.plans-container .plans li .help {
+    color: #888888;
+}
+.plans-container .plans .join {
+    width: fit-content;
+    margin: 15px 0 0;
+}
+/* End Plans Page */
